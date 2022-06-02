@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud_students_info</title>
+</head>
+<body>
+    <div>
+        <label for="stud-name">Name</label>
+        <input type="text" name="stud-name" id="stud-name" onfocus="this.value=''" required="required" maxlength="15">
+    </div>
+    <br>
+    <div>
+        <label for="age">Age</label>
+        <input type="text" id="age" name="age" required>
+    </div>
+    <br>
+    <div>
+     <label for="email">Email</label>
+        <input type="text" id="email" name="email" required maxlength="15">
+    </div>
+    <br>
+    <button type="button" onclick="addContent()">Add</button>
+    <br>
+    <br>
+    <label for="find"></label>
+    <input type="text" id="find" name="find" required maxlength="15">
+    <button type="button" onclick="find()">Find</button>
+    <br>
+    <br>
+    <div>
+    <label for="update"></label>
+    <input type="text" id="update" name="update" required maxlength="15">
+    <button type="button" onclick="modifyContent()">Update</button>
+    </div>
+    <br>
+        <div>
+        <label for="delete"></label>
+        <input type="text" id="delete" name="delete" required maxlength="15">
+        <button type="button" onclick="deleteContent()">Delete</button>
+        </div>
+        <br>
+        <div>
+    <script src="./js/crud_students_info.js"></script>
+</body>
+</html>
